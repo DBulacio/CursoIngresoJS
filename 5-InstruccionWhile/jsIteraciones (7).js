@@ -1,12 +1,23 @@
 function mostrar()
 {
-
 	var contador=0;
-	var acumulador=0;
-	var respuesta='si';
+  var acumulador=0;
+  var num;
+	var respuesta;
 
+  respuesta = prompt("Ingresar otro numero? SI/NO");
 
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
+  while (respuesta == "si"){
+    num = prompt("Ingrese un numero");
+    num = parseInt(num);
 
-}//FIN DE LA FUNCIÓN
+    acumulador += num;
+
+    respuesta = prompt("Ingresar otro numero? SI/NO");
+    contador++;
+  }
+
+  document.getElementById('suma').value=acumulador;
+  document.getElementById('promedio').value=acumulador/contador;
+
+}

@@ -1,6 +1,9 @@
 function mostrar()
 {
-	alert('iteración while');
+  var i = 10;
 
-
-}//FIN DE LA FUNCIÓN
+  while (i > 0){
+    alert(i);
+    i--;
+  }
+}
