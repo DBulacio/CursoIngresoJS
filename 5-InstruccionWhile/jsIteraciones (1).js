@@ -1,6 +1,6 @@
 function mostrar()
 {
-  var i = 0;
+  //var i = 0;
 
   /*
   while (i <= 10){
@@ -8,9 +8,14 @@ function mostrar()
     i++;
   }
   */
-
+  /*
   do {
     alert(i);
     i++;
   } while (i <= 10);
+  */
+
+  for(var i = 0 ; i <= 10 ; i++){
+    alert(i);
+  }
 }

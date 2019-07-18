@@ -5,11 +5,16 @@ function mostrar()
   while (sexo != "f" && sexo != "m") {
     var sexo = prompt("ingrese un sexo válido.");
   }
-  */
 
   do {
     var sexo = prompt("ingrese un sexo válido.");
   } while (sexo != "f" && sexo != "m");
-  document.getElementById('Sexo').value=sexo;
+  */
+
+  for ( ; sexo != "f" && sexo != "m" ; ){
+    var sexo = prompt("ingrese un sexo válido.");
+  }
+
+ document.getElementById('Sexo').value=sexo;
 
 }
