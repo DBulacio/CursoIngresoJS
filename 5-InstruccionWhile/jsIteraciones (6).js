@@ -8,12 +8,14 @@ function mostrar()
     num = prompt("Ingrese un numero");
     num = parseInt(num);
 
-    acumulador += num;
+    if (isNaN(num))
+      continue;
 
+    acumulador += num;
     contador++;
   }
 
   document.getElementById('suma').value=acumulador;
   document.getElementById('promedio').value=acumulador/5;
 
-}//FIN DE LA FUNCIÓN
+}

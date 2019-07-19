@@ -1,21 +1,25 @@
 function mostrar()
 {
 	var contador = 0, num, max = 0, min = 0;
-	var respuesta;
 
-  respuesta = prompt("Ingresar otro numero?");
-
-  while (respuesta == "si"){
+  while (true){
     num = prompt("Ingrese un numero");
+
+    if (num == null)
+      break;
+
     num = parseInt(num);
+
+    if (isNaN(num)){
+      alert("ERROR: isNaN");
+      continue;
+    }
 
     if (num > max){
       max = num;
-    } else if (num < min){
+    } else {
       min = num;
     }
-
-    respuesta = prompt("Ingresar otro numero?");
   }
 
   document.getElementById('maximo').value = max;

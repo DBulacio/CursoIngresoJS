@@ -3,17 +3,22 @@ function mostrar()
 	var contador=0;
   var acumulador=0;
   var num;
-	var respuesta;
 
-  respuesta = prompt("Ingresar otro numero? SI/NO");
-
-  while (respuesta == "si"){
+  while (true){
     num = prompt("Ingrese un numero");
+
+    if(num == null) //si pone cancelar, termina el bucle.
+      break;
+
     num = parseInt(num);
+
+    if(isNaN(num)){ //si no pone un número, vuelve al principio del bucle.
+      alert("isNaN");
+      continue;
+    }
 
     acumulador += num;
 
-    respuesta = prompt("Ingresar otro numero? SI/NO");
     contador++;
   }
 

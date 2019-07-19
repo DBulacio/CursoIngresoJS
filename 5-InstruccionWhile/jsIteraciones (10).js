@@ -1,16 +1,20 @@
 function mostrar()
 {
 	var contador = 0;
-  var respuesta;
 
   var suma_neg = 0, suma_pos = 0, cant_neg = 0, cant_pos = 0, cant_zero = 0, cant_par = 0,
       prom_pos, prom_neg, delta;
 
-  respuesta = prompt("Ingresar otro numero?");
-
-  while (respuesta == "si"){
+  while (true){
     num = prompt("Ingrese un numero");
+    if (num == null)
+      break;
+
     num = parseInt(num);
+    if (isNaN(num)){
+      alert("ERROR: isNaN");
+      continue;
+    }
 
     // 1-Suma de los negativos.
     if (num < 0){
@@ -37,7 +41,6 @@ function mostrar()
     // 9-Diferencia entre positivos y negativos, (positvos-negativos).
 
     contador++;
-    respuesta = prompt("Ingresar otro numero?");
   }
 
   prom_pos = suma_pos / contador;

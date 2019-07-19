@@ -2,24 +2,26 @@ function mostrar()
 {
 	var contador=0;
 	var positivo = 0, negativo = 1, num;
-	var respuesta;
 
-  respuesta = prompt("Ingresar otro numero?");
-
-  while (respuesta == "si"){
+  while (true){
     num = prompt("Ingrese un numero");
+    if (num == null) //si pone cancelar, termina el bucle.
+      break;
+
     num = parseInt(num);
+    if (isNaN(num)){  //si no pone un número, vuelve al principio del bucle.
+      alert("ERROR: isNaN");
+      continue;
+    }
 
     if(num >= 0){
       positivo += num;
     } else {
       negativo *= num;
     }
-
-    respuesta = prompt("Ingresar otro numero?");
   }
 
   document.getElementById('suma').value=positivo;
   document.getElementById('producto').value=negativo;
 
-}//FIN DE LA FUNCIÓN
+}
