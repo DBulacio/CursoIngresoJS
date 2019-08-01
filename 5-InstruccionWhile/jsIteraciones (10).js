@@ -36,21 +36,27 @@ function mostrar()
     if (num / 2 == 0){
       cant_par++;
     }
-    // 7-Promedio de positivos.
-    // 8-Promedios de negativos.
-    // 9-Diferencia entre positivos y negativos, (positvos-negativos).
-
     contador++;
   }
 
-  prom_pos = suma_pos / contador;
-  prom_neg = suma_neg / contador;
-  delta    = suma_pos - suma_neg;
+  // 7-Promedio de positivos.
+  // 8-Promedios de negativos.
+  // 9-Diferencia entre positivos y negativos, (positvos-negativos).
+  if (cant_pos != 0)
+    prom_pos = suma_pos / cant_pos;
+  if (cant_neg != 0)
+    prom_neg = suma_neg / cant_neg;
 
-  // Hacer con document.write
-  console.log("Suma de negativos: " + suma_neg + " ; suma de positivos: " + suma_pos +
-                 " ; cantidad de positivos: " + cant_pos + " ; cantidad de negativos: " + cant_neg +
-                 " ; cantidad de ceros: " + cant_zero + " ; promedio positivos: " + prom_pos +
-                 " ; promedio negativo: " + prom_neg + " ; neg-pos: " + delta +
-                 " ; cantidad de pares: " + cant_par);
+  delta = suma_pos - suma_neg;
+
+  document.write("Suma de negativos: " + suma_neg + "<br>");
+  document.write("Suma de positivos: " + suma_pos + "<br>");
+  document.write("cantidad de positivos: " + cant_pos + "<br>");
+  document.write("cantidad de negativos: " + cant_neg + "<br>");
+  document.write("cantidad de ceros: " + cant_zero + "<br>");
+  document.write("promedio positivos: " + prom_pos + "<br>");
+  document.write("promedio negativos: " + prom_neg + "<br>");
+  document.write("neg-pos: " + delta + "<br>");
+  document.write("cantidad de pares: " + cant_par + "<br>");
+
 }
