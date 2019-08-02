@@ -1,68 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js"></script>
+  <title>Document</title>
 </head>
-
-	<head>
-		<meta charset="utf-8">
-		<title>Curso Ingreso UTN FRA</title>
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-
-		<!--Estilos-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="stylesheet" type="text/css" href="estilo.css">
-		<link rel="stylesheet" type="text/css" href="animacion.css">
-		<!--final de Estilos-->
-
-
-	</head>
 <body>
-
-<div class=" animated bounceInRight header">
-  <center><h1>UTN FRA</h1><p>Curso de ingreso <strong> JS</strong> </p></center>
-</div>
-
-<div class="row">
-  <div class="col-3 col-s-3 menu">
-    <ul>
-      <li class="MiBotonUTNMenuInicioParaParcial" onclick="location.href='1-EntradaSalida/index.html'" >E/S de datos</li>
-      <li class="MiBotonUTNMenuInicioParaParcial" onclick="location.href='2-InstruccionIf/index.html'" >Instrucci&oacute;n 'if'</li>
-      <li class="MiBotonUTNMenuInicioParaParcial" onclick="location.href='3-InstruccionSwitch/index.html'" >Instrucci&oacute;n 'Switch'</li>
-     
-      <li class="MiBotonUTNMenuInicioParaParcial" onclick="location.href='5-InstruccionWhile/index.html'" >Iteraciones 'WHILE'</li>
-      <li class="MiBotonUTNMenuInicioNoParcial" onclick="location.href='6-InstruccionFor/index.html'" >Iteraciones 'FOR'</li>
-       <li class="MiBotonUTNMenuInicioNoParcial" onclick="location.href='4-Tiempo/index.html'" >Manejar el tiempo</li>
-      <li class="MiBotonUTNMenuInicioNoParcial" onclick="location.href='7-Vectores/index.html'" >Vectores</li>
-      <li class="MiBotonUTNMenuInicioNoParcial" onclick="location.href='8-TPs/index.html'" >TPs</li>
-      <li class="MiBotonUTNMenuInicioNoParcial"  ><a   target="_blank" style="color :white"href="Guia de TPs curso de ingreso.pdf">PDF Tps</a> </li>
-      <li class="MiBotonUTNMenuInicioParaParcial"  onclick="location.href='9-Parciales/index.html'" >Parciales</li>
-       <li class="MiBotonUTNMenuInicioNoParcial"     ><a  href='http://www.w3schools.com/js/default.asp'  target="_blank" style="color :white" >W3School</a></li>
-    </ul>
-  </div>
-
-  <div class="col-6 col-s-9">
-   	<img src="inicio.png" style="overflow: scroll;">
-  </div>
-
-  <div class="col-3 col-s-12">
-    <div class="aside animated bounceInUp">
-      <h2>Objetivos</h2>
-      <ul>
-      	<li>Entender la sintaxis  </li>
-      	<li>Buscar todas la soluciones  </li>
-      	<li>Analizar la mejor </li>
-      	<li>Aplicar los conocimientos</li>
-      </ul>
-     
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-  <p>Curso de ingreso UTN FRA</p>
-</div>
-
+  <ol>
+    <li>
+        Pedir los datos necesarios de un triangulo, validar que sea rectangulo y calcular su superfecie.
+    </li>
+    <li>
+        Se deberan cargar tenistas hasta que el usuario quiera. Los datos a cargar seran: nombre, edad,
+        partidos ganados, partidos perdidos. Debemos calcular el promedio de edad, cantidad de tenistas
+        con record positivo, nombre del tenista con mas victorias, nombre del tenista con mas derrotas.
+    </li>
+    <li>
+        Se deben ingresar productos hasta que el usuario quiera. Pedir nombre, precio y temperatura
+        de conservacion del producto. Deberemos informar promedio de precio, nombre del producto de
+        precio maximo, nombre del producto de precio minimo, precio maximo con temperatura bajo cero,
+        temperatura minima sobre cero.
+    </li>
+    <li>
+        Se deberan pedir 10 numeros entre -100 y 900 y deberemos informar: cantidad de numeros pares,
+        cantidad de ceros, promedio de pares, cantidad de numeros divisibles por 3, el promedio de los
+        numeros menores a 300, la multiplicacion acumulada de los nueros mayores a 500 y el mayor numero
+        que sea primo.
+    </li>
+  </ol>
+  <div><button onclick="ej1()">Ejercicio 1</button></div>
+  <div><button onclick="ej2()">Ejercicio 2</button></div>
+  <div><button onclick="ej3()">Ejercicio 3</button></div>
+  <div><button onclick="ej4()">Ejercicio 4</button></div>
 </body>
 </html>
